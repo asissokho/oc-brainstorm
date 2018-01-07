@@ -48,14 +48,14 @@ Expedition (Colis)
     Liste de documents(Factures, Photos, ...)  
 
 
-###Commentaires :
+### Commentaires :
 Peut-être qu'un point important est mettre à jour la base de données de vos clients, Provider et Transporteur ...
 D'apres ce que j'ai les entités (type de données que nous aurons à gérer) :
 Il faudra aussi penser à un outil de génération de fichiers pdf pour les factures ...
 
 
 
-###Fonctionalités 
+### Fonctionalités 
     1 - Base de données centalisées des commandes 
     2 - Suivi des commandes 
     3 - Outil de suivi de commandes (portail web, envoi de textos en auto etc...)
