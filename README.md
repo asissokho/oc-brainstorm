@@ -1,15 +1,15 @@
 # OC-Brain Storming
 
-
-Provider:
-=========
+Provider (Ex:Amazon, ...)
+=========================
+    Id Interne
     Addresse 
     Numero de téléphone
     Addresse
     email
 
 
-Client:
+Client
 =======
     Identifiant interne
     Nom 
@@ -20,12 +20,12 @@ Client:
     Adresses de livraison 
     email 
 
-Commandes: 
+Commandes 
 ==========
     Provider 
     Identifiant externe 
-    List des items 
-    List des expeditions recus 
+    Liste des items 
+    Liste des expeditions recus 
     Statut
     Liste de documents(Factures, Photos, ...) 
     Valeur 
@@ -34,7 +34,7 @@ Commandes:
 
 
 Expedition (Colis)
-============
+===================
     Expedition Id
     Source  (Extern/Intern)
     Transporteur:
@@ -43,13 +43,13 @@ Expedition (Colis)
     Date de Depart 
     Date Arrivée estimée
     Date Arrivée effective
-    Commande Associée:
+    Commande Associée
     Liste de documents(Factures, Photos, ...)  
 
 
-### Commentaires :
+### Commentaires 
     Peut-être qu'un point important est mettre à jour la base de données de vos clients, Provider et Transporteur ...
-    Ensuite, viendront les expeditions (Une base de données des expeditions et des l'ensembles de produits concernés)
+    Ensuite, viendront les commandes, expeditions, des l'ensembles de produits concernés)
     Pour l'instant on peut penser aux entités (type de données que nous aurons à gérer) listée plus haut. 
     /!\ N'hésitez pas à remonter d'autres informations que nous devrons sauvegarder.
     Il faudra aussi penser à un outil de génération de fichiers pdf pour les factures ...
@@ -58,10 +58,10 @@ Expedition (Colis)
 
 ### Fonctionalités 
     Pour l'instant, on peut penser aux fonctionalités suivantes :
-    1 - Base de données centalisées des commandes 
+    1 - Base de données centalisée des commandes 
     2 - Suivi des commandes 
     3 - Outil de suivi de commandes (portail web, envoi de textos en auto etc...)
-    4 - Outili de facturation 
+    4 - Outil de facturation 
     5 - Historique, statistiques, etc...
 
 
