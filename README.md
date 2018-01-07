@@ -25,7 +25,7 @@ Commandes
     Provider 
     Identifiant externe 
     Liste des items 
-    Liste des expeditions recus 
+    Liste des expeditions reçues 
     Statut
     Liste de documents(Factures, Photos, ...) 
     Valeur 
