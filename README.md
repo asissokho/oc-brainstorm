@@ -19,6 +19,7 @@ Client
     Mail 
     Adresses de livraison 
     email 
+    numero de téléphone
 
 Commandes 
 ==========
