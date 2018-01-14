@@ -15,7 +15,6 @@ Client
     Nom 
     Prenom 
     Date de Naissance 
-    Adresse Postale 
     Mail 
     Adresses de livraison 
     email 
@@ -23,39 +22,104 @@ Client
 
 Commandes 
 ==========
+    Identifiant command  master
+    Identifiant command
     Provider 
     Identifiant externe 
-    Liste des items 
-    Liste des expeditions reçues 
+    Liste des Command items 
+    Liste de colis
     Statut
     Liste de documents(Factures, Photos, ...) 
     Valeur 
 
+Command Items
+=============
+    Identifiant command 
+    Nom Item
+    Description Item
+    Quantité 
+    Prix Unitaire   
+    Devise 
 
 
 
-Expedition (Colis)
+Colis 
+======
+    Identifiant colis
+    Identifiant command
+    Longueur 
+    Largeur
+    Hauteur 
+    Poids Volumetrique
+    Supplement Hors Gabarit
+    Valeur
+    Devise
+    Liste de Colis Items
+
+Colis Items
+===========
+    Identifiant command 
+    Nom Item
+    Description Item
+    Quantité 
+    Prix Unitaire   
+    Devise 
+
+    
+Expedition 
 ===================
     Expedition Id
-    Source  (Extern/Intern)
     Transporteur:
     Lieu Depart  
-    Lieu Destinée
+    Lieu Destination
     Date de Depart 
     Date Arrivée estimée
     Date Arrivée effective
-    Commande Associée
+    Liste de Box
     Liste de documents(Factures, Photos, ...)  
+
+Box 
+===
+    Box Id    
+    Expedition Id
+    Longueur 
+    Largeur
+    Hauteur
+    Poids
+    Liste de Box Items
+
+
+Box Item (Box Id + Colis)
+========
+    Box Id
+        Colis.Longueur 
+        Colis.Largeur
+        Colis.Hauteur
+        Colis.Poids
+        Colis.Valeur
+        Colis.Supplement Hors Gabarit 
+        Colis.Command Id
+    Commentaire
+
+
+
 
 
 ### Commentaires 
-    Un point important serait de mettre à jour la base de données de vos clients, Provider et Transporteur
-    Ensuite, viendront les commandes, expeditions, des l'ensembles de produits concernés)
-    Pour l'instant on peut penser aux entités (type de données que nous aurons à gérer) listée plus haut. 
-    /!\ N'hésitez pas à remonter d'autres informations que nous devrons sauvegarder.
-    Il faudra aussi penser à un outil de génération de fichiers pdf pour les factures ...
-
-
+    
+    Suite à vos retours:
+  
+    L'enrichissement des providers se fera au fur et à mesure.
+    Une command est composée d'une command master et de 'sous-commandes' par Provider.
+    Le client n'a plus d'adresse postale
+    Super retour sur la notion de colis. Je ne l'avais pas en tête!
+    Pour les expeditions : 
+        Ajout de d'informations complementaires : ville de livraison, numero d'expediion, date expedition,... 
+        Les expeditions sont composées de box 
+        Les box sont eux même composés de box items (colis ....)  
+        Les box items (colis) sont reliés aux commandes
+    
+    Vos inputs éclairés sont les bienvenus!
 
 ### Fonctionalités 
     Pour l'instant, on peut penser aux fonctionalités suivantes :
